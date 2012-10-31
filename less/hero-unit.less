@@ -2,21 +2,32 @@
 // ---------
 
 .hero-unit {
-  padding: 60px;
-  margin-bottom: 30px;
-  background-color: @heroUnitBackground;
-  .border-radius(6px);
-  h1 {
-    margin-bottom: 0;
-    font-size: 60px;
-    line-height: 1;
-    color: @heroUnitHeadingColor;
-    letter-spacing: -1px;
+  padding: 35px;
+  background-color: @digitas;
+
+
+  span{
+margin: 0;
+font-family: "Lato";
+color: inherit;
+text-rendering: optimizelegibility;
+font-weight: 100;
+font-size: 40px;
+color: @heroUnitHeadingColor;
+line-height:100%;
+    
+/*    font-family: "Lato Hairline";
+    font-weight: 100;
+    line-height:100%;
+    margin-bottom: 20px;
+    font-size: 42px;
+    color: @heroUnitHeadingColor;*/
   }
-  p {
-    font-size: 18px;
-    font-weight: 200;
-    line-height: @baseLineHeight * 1.5;
-    color: @heroUnitLeadColor;
-  }
+
+
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); 
+  -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); 
 }
+

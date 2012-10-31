@@ -115,7 +115,7 @@ position: fixed !important;
             {block:Posts}
                 <div class="span4 spanClear">
                 {block:Text}
-                    <h2><a href="{Permalink}">{Title}</a></h2>
+                    <h2>{Title}</h2>
                     
                         {block:Title}
                             <h3></h3>
@@ -207,7 +207,7 @@ position: fixed !important;
                 
                 
                 {block:More}
-                 <p><a href="{Permalink}" class="btn">Learn more &raquo;</a></p>
+                 <p><a href="{Permalink}" class="btn btn-primary">Learn more &raquo;</a></p>
                  {/block:More}
                  </div>
                  
@@ -269,7 +269,7 @@ position: fixed !important;
             {block:HasTags}
             <div class="tags">
               {block:Tags}
-              <a class="tag btn btn-mini" href="{TagURL}">{Tag}</a>
+              <a class="tag btn btn-primary btn-mini" href="{TagURL}">{Tag}</a>
               {/block:Tags}
             </div> <!-- .tags -->
             {/block:HasTags}

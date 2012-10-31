@@ -30,6 +30,8 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+// DIGITAS
+@digitas:				#d72426;
 
 // Scaffolding
 // -------------------------
@@ -39,13 +41,14 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             #e2383f;
+
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        "Lato", sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -55,7 +58,7 @@
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    900;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -74,7 +77,7 @@
 @btnBorder:                         #ccc;
 
 @btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 10%);
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
@@ -166,7 +169,7 @@
 // Hero unit
 // -------------------------
 @heroUnitBackground:              @grayLighter;
-@heroUnitHeadingColor:            inherit;
+@heroUnitHeadingColor:            @white;
 @heroUnitLeadColor:               inherit;
 
 
