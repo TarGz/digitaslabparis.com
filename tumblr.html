@@ -115,14 +115,9 @@ position: fixed !important;
             {block:Posts}
                 <div class="span4 spanClear">
                 {block:Text}
-                    <h2>{Title}</h2>
-                    
-                        {block:Title}
-                            <h3></h3>
-                        {/block:Title}
-
+                        <a href="{permalink}">
                         {Body}
-                    
+                        </a>
                 {/block:Text}
 
                 {block:Photo}
@@ -205,10 +200,11 @@ position: fixed !important;
                     </li>
                 {/block:Audio}
                 
-                
+
                 {block:More}
                  <p><a href="{Permalink}" class="btn btn-primary">Learn more &raquo;</a></p>
                  {/block:More}
+
                  </div>
                  
                  
@@ -261,9 +257,6 @@ position: fixed !important;
               {/block:Reblog}
               {/block:Date}
 
-              {block:HasTags}
-              with tags:
-              {/block:HasTags}
             </div> <!-- .date -->
 
             {block:HasTags}
@@ -318,13 +311,13 @@ position: fixed !important;
 
 
           
-
+<!-->
               
               {block:Title}
               <h1>{Title}</h1>
               {/block:Title}
                                         
-
+-->
             
             <p>
             
