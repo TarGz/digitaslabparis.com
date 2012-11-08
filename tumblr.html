@@ -7,6 +7,7 @@
     <meta name="image:Background" content="http://static.tumblr.com/vv8cdma/Ddzm1ypam/chruch.png" />
     <meta name="text:Application Stylesheet URL" content="" />
     <meta name="if:Show Description On Index" content="1" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,900' rel='stylesheet' type='text/css'>
 
     <!-- Sharing Buttons -->
     <meta name="if:Show Tweet Button" content="1"/>
@@ -104,14 +105,15 @@ position: fixed !important;
       {block:IndexPage}
       {block:IfShowDescriptionOnIndex}
       <div class="hero-unit">
-        <h1>{Title}</h1>
-        <p>{Description}</p>
-        
-     </div>    
+        <div class="row">
+          <div class="span7">
+           <span>{Description}</span>
+          </div>
+        </div>
+      </div>
      {/block:IfShowDescriptionOnIndex}
-    <div class="row">
-        
 
+    <div class="row">
             {block:Posts}
                 <div class="span4 spanClear">
                 {block:Text}
