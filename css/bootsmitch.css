@@ -133,11 +133,19 @@ textarea {
 }
 body {
   margin: 0;
+<<<<<<< HEAD
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+=======
+  font-family: "Lato", sans-serif;
+>>>>>>> master
   font-size: 13px;
   line-height: 18px;
   color: #333333;
   background-color: #ffffff;
+<<<<<<< HEAD
+=======
+  font-weight: 300;
+>>>>>>> master
 }
 a {
   color: #e2383f;
@@ -361,10 +369,19 @@ h4,
 h5,
 h6 {
   margin: 0;
+<<<<<<< HEAD
   font-family: inherit;
   font-weight: bold;
   color: inherit;
   text-rendering: optimizelegibility;
+=======
+  font-family: "Lato", sans-serif;
+  /*font-weight: @headingsFontWeight;*/
+
+  color: inherit;
+  text-rendering: optimizelegibility;
+  font-weight: 900;
+>>>>>>> master
 }
 h1 small,
 h2 small,
@@ -383,8 +400,13 @@ h1 small {
   font-size: 18px;
 }
 h2 {
+<<<<<<< HEAD
   font-size: 24px;
   line-height: 36px;
+=======
+  font-size: 20px;
+  line-height: 21.599999999999998px;
+>>>>>>> master
 }
 h2 small {
   font-size: 18px;
@@ -627,7 +649,11 @@ input,
 button,
 select,
 textarea {
+<<<<<<< HEAD
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+=======
+  font-family: "Lato", sans-serif;
+>>>>>>> master
 }
 label {
   display: block;
@@ -2141,6 +2167,7 @@ button.close {
   border: 1px solid #cccccc;
   *border: 0;
   border-bottom-color: #b3b3b3;
+<<<<<<< HEAD
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2148,6 +2175,13 @@ button.close {
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+=======
+  /*.border-radius(4px);*/
+
+  *margin-left: .3em;
+  /*.box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");*/
+
+>>>>>>> master
 }
 .btn:hover,
 .btn:active,
@@ -3083,7 +3117,11 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-search .search-query {
   padding: 4px 9px;
+<<<<<<< HEAD
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+=======
+  font-family: "Lato", sans-serif;
+>>>>>>> master
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -4163,6 +4201,7 @@ a.badge:hover {
   color: #ffffff;
 }
 .hero-unit {
+<<<<<<< HEAD
   padding: 60px;
   margin-bottom: 30px;
   background-color: #eeeeee;
@@ -4182,6 +4221,31 @@ a.badge:hover {
   font-weight: 200;
   line-height: 27px;
   color: inherit;
+=======
+  padding: 35px;
+  background-color: #d72426;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.hero-unit span {
+  margin: 0;
+  font-family: "Lato";
+  color: inherit;
+  text-rendering: optimizelegibility;
+  font-weight: 100;
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 100%;
+  /*    font-family: "Lato Hairline";
+    font-weight: 100;
+    line-height:100%;
+    margin-bottom: 20px;
+    font-size: 42px;
+    color: @heroUnitHeadingColor;*/
+
+>>>>>>> master
 }
 .pull-right {
   float: right;

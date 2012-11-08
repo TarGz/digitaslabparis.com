@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head> 
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width">
+    <meta name="text:Google Analytics UA Code" content="" /> 
+    <meta name="image:Background" content="http://static.tumblr.com/vv8cdma/Ddzm1ypam/chruch.png" />
+    <meta name="text:Application Stylesheet URL" content="" />
+    <meta name="if:Show Description On Index" content="1" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,900' rel='stylesheet' type='text/css'>
+
+    <!-- Sharing Buttons -->
+    <meta name="if:Show Tweet Button" content="1"/>
+    <meta name="text:Tweet Via Account" content=""/>
+    <meta name="text:Tweet Follow Account" content=""/>
+    <meta name="if:Show Like Button" content="1"/>
+
+    <!-- Comments -->
+    <meta name="text:Disqus Shortname" content=""/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="description" content="{MetaDescription}" /> 
+    <link href="{Favicon}" rel="shortcut icon" />
+    <link rel="apple-touch-icon" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}"> 
+    
+    <title>{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}{block:Pagination} - {lang:Page CurrentPage of TotalPages}{/block:Pagination}</title> 
+
+        <!-- Le styles -->
+    <link href="http://targz.github.com/digitaslabparis.com/css/bootsmitch.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      
+      iframe#tumblr_controls { 
+top: 100% !important; 
+margin: -30px 0 0 0; 
+right: 5px !important; 
+position: fixed !important; 
+}
+    </style>
+
+    <link href="http://targz.github.com/digitaslabparis.com/css/responsive.css" rel="stylesheet">
+    <link href="http://targz.github.com/digitaslabparis.com/css/digitaslabparis.css" rel="stylesheet">
+
+  </head> 
+  <body>
+
+    {block:IfShowLikeButton}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=325405900855984";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    {/block:IfShowLikeButton}
+
+    <header>
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+
+            <a class="brand" href="/">
+              <img src="http://targz.github.com/digitaslabparis.com/img/logoLab.png">
+            </a>
+
+            <div class="nav-collapse">
+              <ul class="nav pull-right">
+
+                {block:Pages}
+                <li class="divider-vertical"></li>
+                
+                <li>
+                  <a href="{URL}">{Label}</a>
+                </li>
+                {/block:Pages}
+              </ul>
+
+            </div> <!-- nav-collapse -->
+
+          </div> <!-- container -->
+        </div> <!-- navbar-inner -->
+      </div> <!-- navbar navbar-fixed-top -->
+    </header>
+
+
+    <div class="container">
+
+
+
+      <!-- HOME -->
+      
+      
+      
+      {block:IndexPage}
+      {block:IfShowDescriptionOnIndex}
+      <div class="hero-unit">
+        <div class="row">
+          <div class="span7">
+           <span>{Description}</span>
+          </div>
+        </div>
+      </div>
+     {/block:IfShowDescriptionOnIndex}
+
+    <div class="row">
+            {block:Posts}
+                <div class="span4 spanClear">
+                {block:Text}
+                        <a href="{permalink}">
+                        {Body}
+                        </a>
+                {/block:Text}
+
+                {block:Photo}
+                    <li class="post photo">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Photo}
+
+                {block:Photoset}
+                    <li class="post photoset">
+                        {Photoset-500}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Photoset}
+
+                {block:Quote}
+                    <li class="post quote">
+                        "{Quote}"
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+                    </li>
+                {/block:Quote}
+
+                {block:Link}
+                    <li class="post link">
+                        <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+                    </li>
+                {/block:Link}
+
+                {block:Chat}
+                    <li class="post chat">
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}
+
+                                    {Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </li>
+                {/block:Chat}
+
+                {block:Video}
+                    <li class="post video">
+                        {Video-500}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Video}
+
+                {block:Audio}
+                    <li class="post audio">
+                        {AudioPlayerBlack}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Audio}
+                
+
+                {block:More}
+                 <p><a href="{Permalink}" class="btn btn-primary">Learn more &raquo;</a></p>
+                 {/block:More}
+
+                 </div>
+                 
+                 
+            {/block:Posts}
+      
+        
+       
+        
+      </div>
+      
+      {/block:IndexPage}
+
+
+<!-- / HOME -->
+
+
+
+
+
+<!-- PAGE -->
+        {block:PostTitle}
+
+
+      <div class="posts">
+
+
+        {block:DayPage}
+        <li class="POST ALT TEXT MINI">
+          <div class="ENTRY">
+            <div class="TITLE CENTER">
+              {lang:Viewing everything posted on Month DayOfMonth Year}
+            </div>            
+          </div>
+        </li>       
+        {/block:DayPage}
+              
+        {block:Posts}
+        <div class="row post {block:Text}text{/block:Text}{block:Photo}photo{/block:Photo}{block:Quote}quote{/block:Quote}{block:Video}video{/block:Video}{block:Link}link{/block:Link}{block:Chat}chat{/block:Chat}{block:Audio}audio{/block:Audio}{block:Answer}answer{/block:Answer}">  
+
+          <div class="span2">
+
+
+            <div class="date">
+              {block:Date}
+              {block:NotReblog}
+                <a href="{Permalink}">{lang:Posted TimeAgo}</a>
+              {/block:NotReblog}
+              {block:Reblog}
+                {lang:PostTypeNoun reblogged from ReblogParentTitle 2}
+              {/block:Reblog}
+              {/block:Date}
+
+            </div> <!-- .date -->
+
+            {block:HasTags}
+            <div class="tags">
+              {block:Tags}
+              <a class="tag btn btn-primary btn-mini" href="{TagURL}">{Tag}</a>
+              {/block:Tags}
+            </div> <!-- .tags -->
+            {/block:HasTags}
+
+            {block:NoteCount} 
+            <div class="notes">
+              <a href="{Permalink}#notes">
+                <i class="icon-heart"></i> {NoteCountWithLabel}
+              </a>
+            </div>
+            {/block:NoteCount} 
+
+            {block:IfDisqusShortname}
+            <a class="dsq-comment-count" href="{Permalink}#disqus_thread">{lang:Comments}</a>
+            {/block:IfDisqusShortname}
+
+            <div class="share-links">
+              {block:IfShowTweetButton}
+              <br />
+              <p>Tweet about it</p>
+              <div class="tweet share-link">
+                <a href="https://twitter.com/share" 
+                  class="twitter-share-button" 
+                  data-url="{PlaintextPermalink}" 
+                  data-text="{PlaintextTitle}" 
+                  {block:IfTweetViaAccount}
+                  data-via="{PlaintextTweetViaAccount}" 
+                  {/block:IfTweetViaAccount}
+                  {block:IfTweetFollowAccount}
+                  data-related="{PlaintextTweetFollowAccount}" 
+                  {/block:IfTweetFollowAccount}
+                  >Tweet</a>
+              </div>
+              {/block:IfShowTweetButton}
+
+              {block:IfShowLikeButton}
+              <div class="like share-link">
+                <div class="fb-like" data-href="{PlaintextPermalink}" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="lucida grande"></div>
+              </div>
+              {/block:IfShowLikeButton}
+            </div> <!-- .share-links -->
+
+          </div> <!-- .span2 -->
+
+          <div class="span8">
+
+
+          
+<!-->
+              
+              {block:Title}
+              <h1>{Title}</h1>
+              {/block:Title}
+                                        
+-->
+            
+            <p>
+            
+                
+              
+              <!-- TEXT -->
+              
+              {block:Text}
+                
+                {Body}
+                
+              {/block:Text}
+              
+              <!-- /TEXT -->
+              
+             
+              
+            </p>
+                    
+          </div> <!-- .entry -->
+                  
+        </div> <!-- .row .post -->
+
+        {block:PermalinkPage} 
+        {block:IfDisqusShortname}
+        <div class="row">
+          <div class="span10 offset2 comments-container">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript" src="http://{text:Disqus Shortname}.disqus.com/embed.js"></script>
+            <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+          </div> <!-- .comments-container -->
+        </div>
+        {/block:IfDisqusShortname}
+        {/block:PermalinkPage} 
+
+        {block:NoteCount}
+        <div class="row">
+          <div class="span10 offset2 notes-container" id="notes">
+            {PostNotes}
+          </div> <!-- .notes-container -->
+        </div>
+        {/block:NoteCount}
+
+        <hr/>
+
+        {/block:Posts}
+                                            
+      </div> <!-- .posts -->
+      
+      
+      
+      {/block:PostTitle}
+      
+      
+      <!-- / PAGE -->
+      
+      
+      
+      
+      
+      
+      
+      {block:Pagination}
+      <br /><br /><br />
+      <div class="container">
+      <div class="row">
+      <div class="span2 offset5">
+        {block:PreviousPage}
+        
+            <a href="{PreviousPage}" class="btn btn-mini">recent project</a>
+
+        {/block:PreviousPage}
+
+        {block:NextPage}
+
+            <a href="{NextPage}" class="btn btn-mini">Older project</a>
+
+        {/block:NextPage}
+        </div>
+      </di>
+      </div>
+      {/block:Pagination}
+
+      <footer class="footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+      
+    </div>
+    
+    {block:IfGoogleAnalyticsUACode}
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("{text:Google Analytics UA Code}");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    {/block:IfGoogleAnalyticsUACode}
+
+    <!-- ======== SCRIPTS ======== -->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://static.tumblr.com/vv8cdma/obbm0fc3v/bootstrap.min.js"></script>    
+
+    {block:IfShowTweetButton}
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    {/block:IfShowTweetButton}
+
+    {block:IfDisqusShortname}
+    <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+      var links = document.getElementsByTagName('a');
+      var query = '?';
+      for(var i = 0; i < links.length; i++) {
+        if(links[i].href.indexOf('#disqus_thread') >= 0) {
+          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+        }
+      }
+      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+    })();
+    //]]>
+    </script>
+    {/block:IfDisqusShortname}
+
+  </body> 
+</html>
