@@ -133,19 +133,12 @@ textarea {
 }
 body {
   margin: 0;
-<<<<<<< HEAD
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-=======
   font-family: "Lato", sans-serif;
->>>>>>> master
   font-size: 13px;
   line-height: 18px;
   color: #333333;
   background-color: #ffffff;
-<<<<<<< HEAD
-=======
   font-weight: 300;
->>>>>>> master
 }
 a {
   color: #e2383f;
