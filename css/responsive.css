@@ -77,7 +77,8 @@
 }
 @media (max-width: 480px) {
   .hero-unit span {
-    font-size: 22px;
+    /*font-size: 22px;*/
+  
   }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
@@ -192,7 +193,8 @@
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .hero-unit span {
-    font-size: 31px;
+    /*     font-size: 31px;*/
+  
   }
   .row {
     margin-left: -20px;
