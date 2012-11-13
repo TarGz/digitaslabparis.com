@@ -33,7 +33,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: none;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 a:focus {
   outline: thin dotted #333;
@@ -2008,7 +2008,7 @@ table .span24 {
 .open {
   *z-index: 1000;
 }
-.open  > .dropdown-menu {
+.open > .dropdown-menu {
   display: block;
 }
 .pull-right > .dropdown-menu {
