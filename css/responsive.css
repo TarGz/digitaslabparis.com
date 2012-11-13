@@ -7,6 +7,7 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+/*@sansFontFamily:        "Lato", sans-serif;*/
 .clearfix {
   *zoom: 1;
 }
@@ -77,8 +78,7 @@
 }
 @media (max-width: 480px) {
   .hero-unit span {
-    /*font-size: 22px;*/
-  
+    font-size: 22px;
   }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
@@ -128,8 +128,7 @@
 }
 @media (max-width: 767px) {
   .hero-unit span {
-    /*font-size: 24px;*/
-  
+    font-size: 24px;
   }
   body {
     padding-left: 20px;
@@ -194,8 +193,7 @@
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .hero-unit span {
-    /*     font-size: 31px;*/
-  
+    font-size: 31px;
   }
   .row {
     margin-left: -20px;

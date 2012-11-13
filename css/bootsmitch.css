@@ -33,8 +33,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  /*-webkit-transform: translate3d(0,0,0);*/
-
+  -webkit-transform: translate3d(0, 0, 0);
 }
 a:focus {
   outline: thin dotted #333;
@@ -4169,17 +4168,16 @@ a.badge:hover {
   padding: 35px;
   background-color: #d72426;
   margin-bottom: 20px;
-  /*  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); 
-  -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); */
-
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
 }
 .hero-unit span {
   margin: 0;
   font-family: "Lato";
   color: inherit;
   text-rendering: optimizelegibility;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 40px;
   color: #ffffff;
   line-height: 100%;
