@@ -4176,8 +4176,7 @@ a.badge:hover {
   font-family: "Lato";
   color: inherit;
   text-rendering: optimizelegibility;
-  /*font-weight: 100;*/
-
+  font-weight: 100;
   font-size: 40px;
   color: #ffffff;
   line-height: 100%;
