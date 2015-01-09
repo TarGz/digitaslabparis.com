@@ -6383,3 +6383,7 @@ button.close {
 	margin-bottom: 50px;
 	float: right;
 }
+
+p img {
+	width: 100%;
+}

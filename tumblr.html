@@ -77,7 +77,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"><img src="http://targz.github.com/digitaslabparis.com/img/logoLab.png"></a>
+          <a class="navbar-brand" href="/">Labs by DigitasLBi</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav pull-right">
@@ -197,7 +197,7 @@
                     
 
                     {block:More}
-                     <p><a href="{Permalink}" class="btn btn-primary">Learn more &raquo;</a></p>
+                     <p><a href="{Permalink}" class="btn btn-danger">Learn more &raquo;</a></p>
                      {/block:More}
 
                      </div>
@@ -223,7 +223,7 @@
 <!-- PAGE -->
         {block:PostTitle}
 
-
+      <div class="container">
       <div class="posts">
 
 
@@ -240,8 +240,10 @@
         {block:Posts}
         <div class="row post {block:Text}text{/block:Text}{block:Photo}photo{/block:Photo}{block:Quote}quote{/block:Quote}{block:Video}video{/block:Video}{block:Link}link{/block:Link}{block:Chat}chat{/block:Chat}{block:Audio}audio{/block:Audio}{block:Answer}answer{/block:Answer}">  
 
-          <div class="col-md-2">
 
+          <div class="col-md-2">
+            <div class="panel panel-default" style="margin-top: 20px">
+                  <div class="panel-body">
 
             <div class="date">
               {block:Date}
@@ -258,7 +260,7 @@
             {block:HasTags}
             <div class="tags">
               {block:Tags}
-              <a class="tag btn btn-primary btn-mini" href="{TagURL}">{Tag}</a>
+              <a class="tag btn btn-danger btn-mini" href="{TagURL}">{Tag}</a>
               {/block:Tags}
             </div> <!-- .tags -->
             {/block:HasTags}
@@ -300,17 +302,21 @@
               </div>
               {/block:IfShowLikeButton}
             </div> <!-- .share-links -->
-
+            </div>
+            </div>
           </div> <!-- .span2 -->
 
           <div class="col-md-8">
 
-
+            <div class="panel panel-default" style="margin-top: 20px">
+                  <div class="panel-body">
           
 
               
               {block:Title}
+
               <h1>{Title}</h1>
+              <hr>
               {/block:Title}
                                         
 
@@ -334,6 +340,8 @@
             </p>
                     
           </div> <!-- .entry -->
+          </div>
+          </div>
                   
         </div> <!-- .row .post -->
 
@@ -370,7 +378,7 @@
       
       <!-- / PAGE -->
       
-      
+      </div>
       
       
       
