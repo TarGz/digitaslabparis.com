@@ -6376,6 +6376,7 @@ button.close {
 	background: url(../img/bg_header.png) no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
+	color: white;
 }
 
 .background_header .logo_digitas {
