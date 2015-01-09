@@ -92,28 +92,19 @@
     </nav>
     </header>
 
-
-    <div class="container">
-
-
-
-      <!-- HOME -->
-      
-      
-      
-      {block:IndexPage}
+    {block:IndexPage}
       {block:IfShowDescriptionOnIndex}
-      <div class="hero-unit">
-        <div class="row">
-          <div class="col-md-12">
-           <div class="jumbotron">
-              <h1>{Description}</h1>
+
+           <div class="jumbotron background_header hidden-xs">
+            <div class="container">
+              <h1 style="float:left">{Description}</h1>
+              <div class="logo_digitas"><img src="img/logo_digitas.png"></div>
             </div>
           </div>
-        </div>
-      </div>
+
      {/block:IfShowDescriptionOnIndex}
 
+    <div class="container">
     <div class="row">
           <div class="row row-flex row-flex-wrap">
             {block:Posts}
