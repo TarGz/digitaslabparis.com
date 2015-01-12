@@ -6367,8 +6367,8 @@ p img {
 .homeRow{
  -moz-column-width: 34em;
  -webkit-column-width: 34em;
- -moz-column-gap: 2em;
- -webkit-column-gap: 2em; 
+ -moz-column-gap: 1em;
+ -webkit-column-gap: 1em; 
 }
 
 .row > .rowHome {
