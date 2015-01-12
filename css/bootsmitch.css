@@ -6362,11 +6362,12 @@ p img {
 	background-size: cover;
 }
 
-.row.equal [class*="col-"]{
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
+.row {
+    display: table;
 }
 
-.row.equal{
-  overflow: hidden; 
+.row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
 }
