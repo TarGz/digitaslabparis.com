@@ -6365,15 +6365,14 @@ p img {
 *, *:before, *:after {box-sizing:  border-box !important;}
 
 .homeRow{
- -moz-column-width: 25em;
- -webkit-column-width: 25em;
- -moz-column-gap: 1em;
- -webkit-column-gap:1em; 
+ -moz-column-width: 34em;
+ -webkit-column-width: 34em;
+ -moz-column-gap: 2em;
+ -webkit-column-gap: 2em; 
 }
 
 .row > .rowHome {
  display: inline-block;
- padding:  .33rem;
  width:  100%; 
  float:none;
 }
