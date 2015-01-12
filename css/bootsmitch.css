@@ -6372,7 +6372,7 @@ p img {
   
 }
 
-.row > .col-md-6 {
+.row > .rowHome {
  display: inline-block;
  padding:  .50rem;
  width:  100%; 
