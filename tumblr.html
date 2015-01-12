@@ -40,17 +40,17 @@
     <style type="text/css">
       body {
         padding-top: 90px;
-        /*padding-bottom: 40px;*/
+        padding-bottom: 40px;
       }
-      /*iframe#tumblr_controls { 
+      iframe#tumblr_controls { 
         top: 100% !important; 
         margin: -30px 0 0 0; 
         right: 5px !important; 
         position: fixed !important; 
-    }*/
+    }
     </style>
 
-    <link href="http://targz.github.com/digitaslabparis.com/css/responsive.css" rel="stylesheet">
+   <!--  <link href="http://targz.github.com/digitaslabparis.com/css/responsive.css" rel="stylesheet"> -->
     <link href="http://targz.github.com/digitaslabparis.com/css/digitaslabparis.css" rel="stylesheet">
 
   </head> 
@@ -67,9 +67,7 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     {/block:IfShowLikeButton}
 
-    <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -88,9 +86,7 @@
             {/block:Pages}
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
     </nav>
-    </header>
 
     {block:IndexPage}
       {block:IfShowDescriptionOnIndex}
@@ -104,7 +100,7 @@
      {/block:IfShowDescriptionOnIndex}
 
     <div class="container">
-    <div class="row">
+    <div class="row equal">
             {block:Posts}
                 <div class="col-md-6">
                 <div class="panel panel-default">
