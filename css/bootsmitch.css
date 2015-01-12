@@ -6387,3 +6387,13 @@ button.close {
 p img {
 	width: 100%;
 }
+
+.postThumb
+{
+	height: 300px;
+	background: no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
