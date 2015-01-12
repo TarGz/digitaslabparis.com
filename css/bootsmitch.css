@@ -6364,7 +6364,7 @@ p img {
 
 *, *:before, *:after {box-sizing:  border-box !important;}
 
-.row .rowHome{
+.row .homeRow{
  -moz-column-width: 25em;
  -webkit-column-width: 25em;
  -moz-column-gap: 1em;
