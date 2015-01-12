@@ -6364,7 +6364,7 @@ p img {
 
 *, *:before, *:after {box-sizing:  border-box !important;}
 
-.row {
+.row .rowHome{
  -moz-column-width: 25em;
  -webkit-column-width: 25em;
  -moz-column-gap: 1em;
@@ -6374,7 +6374,7 @@ p img {
 
 .row > .rowHome {
  display: inline-block;
- padding:  .50rem;
+ padding:  .33rem;
  width:  100%; 
  float:none;
 }
